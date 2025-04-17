@@ -46,7 +46,6 @@
     padding: 0;
     font-family: "Lato", sans-serif;
     width: 100%;
-    overflow: hidden;
     overflow-x: hidden;
   }
   
@@ -191,8 +190,7 @@ body {
   border-radius: 5px;
   font-family: "Lato", sans-serif;
   width: 100%;
-  overflow: hidden;
-  overflow-x: hidden;
+
  
 }
 
@@ -246,6 +244,7 @@ img:hover{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   
   p{
     color: #64748b;
@@ -1229,7 +1228,6 @@ color: #22c55e;
   @media screen and (max-width: 480px) {
     body{
       width: 100%;
-      overflow: hidden;
       overflow-x: hidden;
     }
     
