@@ -45,6 +45,9 @@
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -187,6 +190,9 @@ body {
   background-color: #eaeaeb;
   border-radius: 5px;
   font-family: "Lato", sans-serif;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
  
 }
 
@@ -1221,6 +1227,11 @@ color: #22c55e;
   /* mobile style */
 
   @media screen and (max-width: 480px) {
+    body{
+      width: 100%;
+      overflow: hidden;
+      overflow-x: hidden;
+    }
     
     .main-nav {
       display: flex;
@@ -1229,7 +1240,7 @@ color: #22c55e;
       padding: 1rem;
       position: fixed;
       left: 0;
-      right: 0;
+      /* right: 0; */
     }
   
     .menuLinks {
