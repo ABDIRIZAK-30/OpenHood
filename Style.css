@@ -244,7 +244,6 @@ img:hover{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   
   p{
     color: #64748b;
@@ -1220,16 +1219,154 @@ color: #22c55e;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
+
+
+
+.footer-section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+  margin-top: 10rem;
+  width: calc(100%);
+  padding: 2rem;
+}
+
+.one-line{
+  display: block;
+  
+}
+.one-line h1{
+  font-size: 9rem;
+  text-align: center;
+}
+
+.footer-1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.footer-1 img{
+  width: 50%;
+  height: auto;
+}
+
+.footer-1 h1{
+  font-size: 1rem;
+}
+
+.footer-1 p{
+  font-size: 1rem;
+}
+
+.footer-1 label{
+  color: rgb(0, 42, 255);
+ 
+}
+
+.newsletter{
+ margin-block: 0.5rem;
+
+}
+.newsletter input{
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 1;
+  border: none;
+  margin-right: 1rem;
+}
+
+.newsletter input:hover{
+  background-color: #0F0A2B;
+  border: 2px solid #2153FF;
+  color: white;
+}
+
+.newsletter button{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.newsletter button:hover{
+  background-color: #0F0A2B;
+  border: 2px solid #2153FF;
+  color: white;
+}
+
+.footer-2{
+  line-height: 2.5rem;
+}
+.footer-2 span{
+  color: rgb(0, 17, 250);
+  font-size: 1.2rem;
+}
+
+
+.footer-2 h1{
+  font-size: 0.8765rem;
+}
+
+/* .footer-2 h1:hover{
+ border-bottom: 2px solid #2153FF;
+ width: 3.5rem;
+ text-wrap: nowrap;
+} */
+
+.socail{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socail img{
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #2153FF;
+  border-radius: 1rem;
+
+}
+
+
+
+
+.last-footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  text-align: center;
+}
+
+.last-footer h1{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom:1rem;
+  margin-left: 5rem;
+  font-weight: bolder;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
 
   /* mobile style */
 
   @media screen and (max-width: 480px) {
-    body{
-      width: 100%;
-      overflow-x: hidden;
-    }
+
     
     .main-nav {
       display: flex;
@@ -1504,6 +1641,130 @@ color: #22c55e;
 .slFlx button{
   margin-bottom: -85rem;
 }
+
+
+
+
+.footer-section{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 10rem;
+  width: calc(30%);
+  padding: 1rem;
+}
+
+.one-line{
+  display: none;
+}
+
+.footer-1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.footer-1 img{
+  width: 50%;
+  height: auto;
+}
+
+.footer-1 h1{
+  font-size: 1rem;
+}
+
+.footer-1 p{
+  font-size: 1rem;
+}
+
+.footer-1 label{
+  color: rgb(47, 0, 255);
+ 
+}
+
+.newsletter{
+ margin-block: 0.5rem;
+
+}
+.newsletter input{
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 1;
+  border: none;
+  margin-right: 1rem;
+}
+
+.newsletter input:hover{
+  background-color: #0F0A2B;
+  border: 2px solid #2153FF;
+  color: white;
+}
+
+.newsletter button{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.newsletter button:hover{
+  background-color: #0F0A2B;
+  border: 2px solid #2153FF;
+  color: rgb(0, 76, 255);
+}
+
+.footer-2{
+  line-height: 2.5rem;
+}
+.footer-2 span{
+  color: rgb(12, 0, 245);
+  font-size: 1.2rem;
+}
+
+
+.footer-2 h1{
+  font-size: 0.8765rem;
+}
+
+/* .footer-2 h1:hover{
+ border-bottom: 2px solid #2153FF;
+ width: 3.5rem;
+ text-wrap: nowrap;
+} */
+
+.socail{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socail img{
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #2153FF;
+  border-radius: 1rem;
+
+}
+
+
+
+
+.last-footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+}
+
+.last-footer h1{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom:1rem;
+  margin-left: 5rem;
+ 
+}
+
+
 
 
   }
