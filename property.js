@@ -13,10 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
   async function filterAndDisplayProperties() {
     const searchQuery = localStorage.getItem("searchQuery");
     if (!searchQuery) {
-      alert("No search query found. Redirecting to the home page.");
-       
+      // Redirect to the home page without an alert
+      window.location.href = "index.html?error=no-search";
       return;
-      
     }
 
     const properties = await fetchProperties();
@@ -44,9 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = ""; // Clear previous content
 
     if (properties.length === 0) {
-    //   container.innerHTML = "<p>No properties found.</p>";
-       window.location.href="index.html"
-        alert("No Properties In your search")
+      container.innerHTML = "<p>No properties found.</p>";
       return;
     }
 
@@ -71,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       pop1.innerHTML = `
         <img src="${property.imageUrl}" alt="popular-1">
         <div class="abspop">
-          <button id="Featured">${property.listingStatuS}</button>
+          <button id="Featured">${property.featured ? "Featured" : ""}</button>
           <button id="Sold">${property.listingStatus}</button>
         </div>
         <h1>${property.address}</h1>
@@ -95,9 +92,19 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="p-2">
           <h1>${property.price}</h1>
-          <button>View Details</button>
+          <button class="view-details-btn">View Details</button>
         </div>
       `;
+
+      // Add event listener to the "View Details" button
+      const viewDetailsButton = pop1.querySelector(".view-details-btn");
+      viewDetailsButton.addEventListener("click", () => {
+        // Save the property data in localStorage
+        localStorage.setItem("selectedProperty", JSON.stringify(property));
+
+        // Redirect to the details page
+        window.location.href = "details.html";
+      });
 
       popFlex.appendChild(pop1);
     });

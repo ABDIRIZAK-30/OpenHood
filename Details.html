@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details</title>
+  <link rel="stylesheet" href="Style.css"> <!-- Link your CSS file -->
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Main container for the property details */
+    .property-details-container {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    /* Title styling */
+    .property-details-container h1 {
+      font-size: 2.5rem;
+      color: #1e293b;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    /* Image styling */
+    .property-details-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Description styling */
+    .property-details-container p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 20px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* List styling for property details */
+    .property-details-container ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .property-details-container ul li {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    .property-details-container ul li strong {
+      color: #1e293b;
+    }
+
+    .property-details-container ul li span {
+      color: #4b5563;
+    }
+
+    /* Additional features section */
+    .additional-features {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f1f5f9;
+      border-radius: 8px;
+    }
+
+    .additional-features h2 {
+      font-size: 1.5rem;
+      color: #1e293b;
+      margin-bottom: 12px;
+    }
+
+    .additional-features ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .additional-features ul li {
+      font-size: 1rem;
+      color: #4b5563;
+      margin-bottom: 8px;
+    }
+
+    /* Button styling */
+    .property-details-container button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      color: #ffffff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .property-details-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="property-details-container">
+    <!-- Property Title -->
+    <h1 id="property-title">Property Title</h1>
+
+    <!-- Property Image -->
+    <img id="property-image" src="" alt="Property Image">
+
+    <!-- Property Description -->
+    <p id="property-description">
+      This is a detailed description of the property. It provides an overview of the features, amenities, and other important details about the property.
+    </p>
+
+    <!-- Property Details -->
+    <ul>
+      <li><strong>Address:</strong> <span id="property-address">123 Main St, London, UK</span></li>
+      <li><strong>Price:</strong> <span id="property-price">$500,000</span></li>
+      <li><strong>Bedrooms:</strong> <span id="property-bedrooms">3</span></li>
+      <li><strong>Bathrooms:</strong> <span id="property-bathrooms">2</span></li>
+      <li><strong>Size:</strong> <span id="property-size">1,500 sqft</span></li>
+      <li><strong>Year Built:</strong> <span id="property-year-built">2020</span></li>
+      <li><strong>Status:</strong> <span id="property-status">For Sale</span></li>
+    </ul>
+
+    <!-- Additional Features Section -->
+    <div class="additional-features">
+      <h2>Additional Features</h2>
+      <ul>
+        <li>Modern kitchen with stainless steel appliances</li>
+        <li>Spacious backyard with a garden</li>
+        <li>Two-car garage</li>
+        <li>Close to schools, parks, and shopping centers</li>
+        <li>Energy-efficient windows and insulation</li>
+      </ul>
+    </div>
+
+    <!-- Go Back Button -->
+    <button onclick="window.history.back()">Go Back</button>
+  </div>
+  <script src="details.js"></script>
+</body>
+</html>
