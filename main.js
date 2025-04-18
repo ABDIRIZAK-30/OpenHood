@@ -60,3 +60,103 @@ navBtn.addEventListener("click", () => {
   updateIcons();
 });
 
+
+
+// faqs
+
+const faqData = [
+  {
+    question: "How do I schedule a property visit?",
+    answer: "You can schedule a property visit by clicking the 'Book a Tour' button on the property listing page or by contacting us directly via phone or WhatsApp. We'll confirm the date and time based on your availability."
+  },
+  {
+    question: "Are there any hidden fees when buying or renting a property?",
+    answer: "No, there are no hidden fees. All costs, including taxes, agency fees, and maintenance charges (if applicable), are clearly outlined before any agreement is signed."
+  },
+  {
+    question: "Can I get help with financing or a mortgage?",
+    answer: "Yes, we can connect you with trusted financial institutions and mortgage consultants to help you find the best financing option based on your needs and budget."
+  },
+  {
+    question: "Is it possible to list my property for sale or rent on your website?",
+    answer: "Absolutely! You can submit your property through our 'List Your Property' page, or contact our agents directly. We'll help you with pricing, photos, and promotion."
+  },
+  {
+    question: "Do you offer virtual tours or video walkthroughs?",
+    answer: "Yes, many of our listings include 360° virtual tours or video walkthroughs so you can explore properties remotely before scheduling a visit."
+  }
+];
+
+
+const questionDiv=document.querySelector('.questionDiv')
+questionDiv
+
+
+
+// document.querySelector('#searchForm').addEventListener('submit', async function() {
+//   const searchInput=document.querySelector('.#searchInput').value;
+//   const url = `https://zillow-com4.p.rapidapi.com/properties/search?location=${searchInput}&status=forSale&sort=relevance&sortType=asc&priceType=listPrice&listingType=agent`;
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'x-rapidapi-key': '469464c2a3msha69de981d7e2884p1ecd54jsnb99e02ef2458',
+// 		'x-rapidapi-host': 'zillow-com4.p.rapidapi.com'
+// 	}
+// };
+
+// try {
+// 	const response = await fetch(url, options);
+// 	const result = await response.text();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
+// })
+
+
+
+async function fetchPropertyData() {
+  const address = "104 Meir Ln College Station, TX 207785"; // full address
+
+  const url = `https://zillow-com4.p.rapidapi.com/properties/search-address?address=${encodeURIComponent(address)}`;
+
+  const options = {
+    method: "GET",
+    headers: {
+   		'x-rapidapi-key': '469464c2a3msha69de981d7e2884p1ecd54jsnb99e02ef2458',
+		'x-rapidapi-host': 'zillow-com4.p.rapidapi.com'
+    }
+  };
+
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log("✅ API Response:", data);
+
+    if (data.property) {
+      const property = data.property;
+      console.log("🏠 Address:", property.address?.streetAddress);
+      console.log("💲 Price:", property.price);
+      console.log("🛏 Bedrooms:", property.bedrooms);
+      console.log("🛁 Bathrooms:", property.bathrooms);
+      console.log("📐 Area:", property.livingArea);
+    } else {
+      console.warn("❌ No property found. Check the address format.");
+    }
+  } catch (error) {
+    console.error("⚠️ API Error:", error.message);
+  }
+}
+
+fetchPropertyData();
+
+ 
+
+
+
+
+
