@@ -91,72 +91,20 @@ const faqData = [
 const questionDiv=document.querySelector('.questionDiv')
 questionDiv
 
+// Add event listener to the search form
+const searchForm = document.querySelector("#searchForm");
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent default form submission behavior
 
-
-// document.querySelector('#searchForm').addEventListener('submit', async function() {
-//   const searchInput=document.querySelector('.#searchInput').value;
-//   const url = `https://zillow-com4.p.rapidapi.com/properties/search?location=${searchInput}&status=forSale&sort=relevance&sortType=asc&priceType=listPrice&listingType=agent`;
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'x-rapidapi-key': '469464c2a3msha69de981d7e2884p1ecd54jsnb99e02ef2458',
-// 		'x-rapidapi-host': 'zillow-com4.p.rapidapi.com'
-// 	}
-// };
-
-// try {
-// 	const response = await fetch(url, options);
-// 	const result = await response.text();
-// 	console.log(result);
-// } catch (error) {
-// 	console.error(error);
-// }
-// })
-
-
-
-async function fetchPropertyData() {
-  const address = "104 Meir Ln College Station, TX 207785"; // full address
-
-  const url = `https://zillow-com4.p.rapidapi.com/properties/search-address?address=${encodeURIComponent(address)}`;
-
-  const options = {
-    method: "GET",
-    headers: {
-   		'x-rapidapi-key': '469464c2a3msha69de981d7e2884p1ecd54jsnb99e02ef2458',
-		'x-rapidapi-host': 'zillow-com4.p.rapidapi.com'
-    }
-  };
-
-  try {
-    const response = await fetch(url, options);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    console.log("✅ API Response:", data);
-
-    if (data.property) {
-      const property = data.property;
-      console.log("🏠 Address:", property.address?.streetAddress);
-      console.log("💲 Price:", property.price);
-      console.log("🛏 Bedrooms:", property.bedrooms);
-      console.log("🛁 Bathrooms:", property.bathrooms);
-      console.log("📐 Area:", property.livingArea);
-    } else {
-      console.warn("❌ No property found. Check the address format.");
-    }
-  } catch (error) {
-    console.error("⚠️ API Error:", error.message);
+  const searchInput = document.querySelector("#searchInput").value.trim();
+  if (!searchInput) {
+    alert("Please enter a location to search.");
+    return;
   }
-}
 
-fetchPropertyData();
+  // Save the search input in localStorage
+  localStorage.setItem("searchQuery", searchInput);
 
- 
-
-
-
-
-
+  // Redirect to the property.html page
+  window.location.href = "property.html";
+});
