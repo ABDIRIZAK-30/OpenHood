@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function filterAndDisplayProperties() {
     const searchQuery = localStorage.getItem("searchQuery");
     if (!searchQuery) {
-      // Redirect to the home page without an alert
-      window.location.href = "index.html?error=no-search";
+ 
       return;
     }
 
