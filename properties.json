@@ -330,7 +330,8 @@
       "bathrooms": 2,
       "propertyType": "Apartment",
       "imageUrl": "Assets/Images/property1.jpg",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
       "address": "456 Elm St, Los Angeles, CA 90001",
@@ -339,7 +340,8 @@
       "bathrooms": 3,
       "propertyType": "House",
       "imageUrl": "Assets/Images/property2.jpg",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
         "address": "mogadishu",
@@ -348,7 +350,8 @@
       "bathrooms": 3,
       "propertyType": "House",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
         "address": "hargeysa",
@@ -357,7 +360,8 @@
       "bathrooms": 3,
       "propertyType": "House",
       "imageUrl": "Assets/Images/popular-2.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
       "address": "789 Oak St, Chicago, IL 60601",
@@ -366,7 +370,8 @@
       "bathrooms": 2,
       "propertyType": "Condo",
       "imageUrl": "Assets/Images/property3.jpg",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
       "address": "101 Pine St, Houston, TX 77001",
@@ -375,7 +380,8 @@
       "bathrooms": 1,
       "propertyType": "Townhouse",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
       "address": "202 Maple St, Miami, FL 33101",
@@ -384,7 +390,8 @@
       "bathrooms": 4,
       "propertyType": "Villa",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "featured ": "for Buy"
     },
     {
       "address": "303 Cedar St, Seattle, WA 98101",
@@ -393,7 +400,8 @@
       "bathrooms": 3,
       "propertyType": "House",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "listingStatuS": "Featured"
     },
     {
       "address": "404 Birch St, Denver, CO 80201",
@@ -402,7 +410,8 @@
       "bathrooms": 2,
       "propertyType": "Apartment",
       "imageUrl": "Assets/Images/property7.jpg",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "listingStatuS": "Featured"
     },
     {
       "address": "hargeysa",
@@ -411,7 +420,8 @@
       "bathrooms": 3,
       "propertyType": "Condo",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "listingStatuS": "Featured"
     },
     {
       "address": "hargeysa",
@@ -420,7 +430,8 @@
       "bathrooms": 4,
       "propertyType": "Villa",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "listingStatuS": "Featured"
     },
     {
       "address": "hargeysa",
@@ -429,6 +440,8 @@
       "bathrooms": 2,
       "propertyType": "Townhouse",
       "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
+      "listingStatus": "For Sale",
+      "listingStatuS": "Featured"
+      
     }
   ]

@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchQuery = localStorage.getItem("searchQuery");
     if (!searchQuery) {
       alert("No search query found. Redirecting to the home page.");
-  
+       
       return;
+      
     }
 
     const properties = await fetchProperties();
@@ -43,7 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = ""; // Clear previous content
 
     if (properties.length === 0) {
-      container.innerHTML = "<p>No properties found.</p>";
+    //   container.innerHTML = "<p>No properties found.</p>";
+       window.location.href="index.html"
+        alert("No Properties In your search")
       return;
     }
 
@@ -68,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       pop1.innerHTML = `
         <img src="${property.imageUrl}" alt="popular-1">
         <div class="abspop">
-          <button id="Featured">${property.featured ? "Featured" : ""}</button>
+          <button id="Featured">${property.listingStatuS}</button>
           <button id="Sold">${property.listingStatus}</button>
         </div>
         <h1>${property.address}</h1>
