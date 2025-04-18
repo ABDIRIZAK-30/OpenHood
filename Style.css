@@ -251,6 +251,17 @@ img:hover{
   }
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .main-nav {
     display: flex;
     flex-direction: row;
@@ -483,7 +494,6 @@ body.darkmode .heroicon h4{
 .trust-compny-1 {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   align-items: center;
   background-color: #060113;
   justify-content: center;
@@ -2184,14 +2194,14 @@ color: #22c55e;
 
 .srchDiv{
     display: flex;
+    flex-direction: column; /* Stack input and button vertically on small screens */
     align-items: center;
     background-color: #ffffff;
-    padding: 0.1rem 0.4rem;
+    padding: 0.5rem;
     width: 100%;
     margin-top: 2rem;
     border-radius: 0.4rem;
-    gap: 0.1rem;
- 
+    gap: 0.5rem;
 }
 
 .srchDiv button{
@@ -2583,7 +2593,7 @@ color: #22c55e;
 
 .main-contact{
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr; /* Single column layout on mobile */
   gap: 1rem;
   margin-top: 10rem;
   
