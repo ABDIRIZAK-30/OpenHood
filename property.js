@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchQuery = localStorage.getItem("searchQuery");
     if (!searchQuery) {
       alert("No search query found. Redirecting to the home page.");
-      window.location.href = "index.html";
+  
       return;
     }
 
