@@ -1,7 +1,7 @@
-// Fetch properties from the JSON file
-async function fetchProperties() {
+document.addEventListener("DOMContentLoaded", () => {
+  async function fetchProperties() {
     try {
-      const response = await fetch("properties.json"); // Path to your JSON file
+      const response = await fetch("properties.json");
       const data = await response.json();
       return data;
     } catch (error) {
@@ -9,56 +9,99 @@ async function fetchProperties() {
       return [];
     }
   }
-  
-  // Display properties in the DOM
-  function displayProperties(properties) {
-    const container = document.querySelector(".property-container");
-    container.innerHTML = ""; // Clear previous content
-  
-    if (properties.length === 0) {
-      container.innerHTML = "<p>No properties found.</p>";
-      window.location.href="index.html"
-      return;
-    }
-  
-    properties.forEach((property) => {
-      const propertyCard = document.createElement("div");
-      propertyCard.classList.add("property-card");
-  
-      propertyCard.innerHTML = `
-        <div class="property-image">
-          <img src="${property.imageUrl}" alt="Property Image" style="width: 100%; height: 300px; border-radius: 8px;">
-          <span class="badge badge-status">${property.listingStatus}</span>
-        </div>
-        <div class="property-details">
-          <p class="property-address">${property.address}</p>
-          <p class="property-type">${property.propertyType}</p>
-          <p class="property-size"><i class="fas fa-bed"></i> ${property.bedrooms} Beds | <i class="fas fa-bath"></i> ${property.bathrooms} Baths</p>
-          <p class="property-price">${property.price}</p>
-          <button class="view-details-btn">View Details</button>
-        </div>
-      `;
-  
-      container.appendChild(propertyCard);
-    });
-  }
-  
-  // Filter and display properties based on the search query
+
   async function filterAndDisplayProperties() {
-    const searchQuery = localStorage.getItem("searchQuery"); // Retrieve the search query from localStorage
+    const searchQuery = localStorage.getItem("searchQuery");
     if (!searchQuery) {
       alert("No search query found. Redirecting to the home page.");
       window.location.href = "index.html";
       return;
     }
-  
+
     const properties = await fetchProperties();
-    const filteredProperties = properties.filter((property) =>
-      property.address.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-  
+
+    // Check if the user input is "All"
+    let filteredProperties;
+    if (searchQuery.toLowerCase() === "all") {
+      filteredProperties = properties; // Display all properties
+    } else {
+      filteredProperties = properties.filter((property) =>
+        property.address.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
     displayProperties(filteredProperties);
   }
-  
-  // Call the function to filter and display properties
+
+  function displayProperties(properties) {
+    const container = document.querySelector(".main-properties-container");
+    if (!container) {
+      console.error("Error: .main-properties-container not found in the DOM.");
+      return;
+    }
+
+    container.innerHTML = ""; // Clear previous content
+
+    if (properties.length === 0) {
+      container.innerHTML = "<p>No properties found.</p>";
+      return;
+    }
+
+    const mainPopular = document.createElement("div");
+    mainPopular.classList.add("mainPopular");
+
+    const title = document.createElement("h1");
+    title.textContent = "Popular Listings";
+    mainPopular.appendChild(title);
+
+    const description = document.createElement("p");
+    description.textContent = "Handpicked homes based on your preferences.";
+    mainPopular.appendChild(description);
+
+    const popFlex = document.createElement("div");
+    popFlex.classList.add("popFlex");
+
+    properties.forEach((property) => {
+      const pop1 = document.createElement("div");
+      pop1.classList.add("pop-1");
+
+      pop1.innerHTML = `
+        <img src="${property.imageUrl}" alt="popular-1">
+        <div class="abspop">
+          <button id="Featured">${property.featured ? "Featured" : ""}</button>
+          <button id="Sold">${property.listingStatus}</button>
+        </div>
+        <h1>${property.address}</h1>
+        <div class="popGrid">
+          <div class="p-1">
+            <span class="material-symbols-outlined">Home</span>
+            <h1>${property.propertyType}</h1>
+          </div>
+          <div class="p-1 p-s">
+            <span class="material-symbols-outlined">6_ft_apart</span>
+            <h1>${property.size || "N/A"} sqft</h1>
+          </div>
+          <div class="p-1">
+            <span class="material-symbols-outlined">room_preferences</span>
+            <h1>${property.bedrooms} Rooms</h1>
+          </div>
+          <div class="p-1 p-s">
+            <span class="material-symbols-outlined">slide_library</span>
+            <h1>${property.yearBuilt || "N/A"}</h1>
+          </div>
+        </div>
+        <div class="p-2">
+          <h1>${property.price}</h1>
+          <button>View Details</button>
+        </div>
+      `;
+
+      popFlex.appendChild(pop1);
+    });
+
+    mainPopular.appendChild(popFlex);
+    container.appendChild(mainPopular);
+  }
+
   filterAndDisplayProperties();
+});
