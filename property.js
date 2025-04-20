@@ -12,8 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function filterAndDisplayProperties() {
     const searchQuery = localStorage.getItem("searchQuery");
-    if (!searchQuery) {
- 
+
+    // Check if the current page is not the home page
+    if (window.location.pathname !== "/index.html" && !searchQuery) {
+      alert("No search query provided. Redirecting to the home page.");
+      document.body.innerHTML = "<p>Redirecting to the home page...</p>"; // Show a message before redirecting
+      setTimeout(() => {
+        window.location.href = "index.html"; // Redirect after showing the message
+      }, 1000); // Delay redirection by 2 seconds
       return;
     }
 
@@ -42,7 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = ""; // Clear previous content
 
     if (properties.length === 0) {
-      container.innerHTML = "<p>No properties found.</p>";
+      container.innerHTML = "<p>No properties found in this location.</p>";
+      setTimeout(() => {
+        window.location.href = "index.html"; // Redirect after showing the message
+      }, 2000);
       return;
     }
 
@@ -67,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       pop1.innerHTML = `
         <img src="${property.imageUrl}" alt="popular-1">
         <div class="abspop">
-          <button id="Featured">${property.featured ? "Featured" : ""}</button>
+          <button id="Featured">${property.features}</button>
           <button id="Sold">${property.listingStatus}</button>
         </div>
         <h1>${property.address}</h1>
@@ -78,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="p-1 p-s">
             <span class="material-symbols-outlined">6_ft_apart</span>
-            <h1>${property.size || "N/A"} sqft</h1>
+            <h1>${property.size}</h1>
           </div>
           <div class="p-1">
             <span class="material-symbols-outlined">room_preferences</span>
@@ -86,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="p-1 p-s">
             <span class="material-symbols-outlined">slide_library</span>
-            <h1>${property.yearBuilt || "N/A"}</h1>
+            <h1>${property.year}</h1>
           </div>
         </div>
         <div class="p-2">

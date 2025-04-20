@@ -127,15 +127,22 @@
 <body>
   <div class="property-details-container">
     <!-- Property Title -->
-    <h1 id="property-title">Property Title</h1>
+    
+    <div class="main-prop">
 
+        <div class="dv1">
+          <img id="property-image" src="" alt="Property Image">
+          <h1 id="property-title">Property Title</h1>
+          <!-- Property Description -->
+          <p id="property-description">
+            This is a detailed description of the property. It provides an overview of the features, amenities, and other important details about the property.
+          </p>
+        </div>
+   
     <!-- Property Image -->
-    <img id="property-image" src="" alt="Property Image">
+ 
+<div class="divUl">
 
-    <!-- Property Description -->
-    <p id="property-description">
-      This is a detailed description of the property. It provides an overview of the features, amenities, and other important details about the property.
-    </p>
 
     <!-- Property Details -->
     <ul>
@@ -147,6 +154,7 @@
       <li><strong>Year Built:</strong> <span id="property-year-built">2020</span></li>
       <li><strong>Status:</strong> <span id="property-status">For Sale</span></li>
     </ul>
+
 
     <!-- Additional Features Section -->
     <div class="additional-features">
@@ -163,6 +171,12 @@
     <!-- Go Back Button -->
     <button onclick="window.history.back()">Go Back</button>
   </div>
+  </div>
+
+
+
+
+    
   <script src="details.js"></script>
 </body>
 </html>

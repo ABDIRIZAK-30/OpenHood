@@ -1,447 +1,122 @@
 [
-    {
-      "address": "123 Main St, New York, NY 10001",
-      "price": "$500,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "456 Elm St, Los Angeles, CA 90001",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-        "address": "mogadishu",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-        "address": "hargeysa",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-2.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "789 Oak St, Chicago, IL 60601",
-      "price": "$600,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "101 Pine St, Houston, TX 77001",
-      "price": "$400,000",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "202 Maple St, Miami, FL 33101",
-      "price": "$850,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/property5.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "303 Cedar St, Seattle, WA 98101",
-      "price": "$700,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/property6.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "404 Birch St, Denver, CO 80201",
-      "price": "$550,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/property7.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "505 Walnut St, Boston, MA 02101",
-      "price": "$650,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/property8.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "606 Chestnut St, San Francisco, CA 94101",
-      "price": "$1,200,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/property9.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "707 Spruce St, Austin, TX 73301",
-      "price": "$450,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/property10.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "123 Main St, New York, NY 10001",
-      "price": "$500,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/property1.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "456 Elm St, Los Angeles, CA 90001",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/property2.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-        "address": "mogadishu",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-        "address": "hargeysa",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-2.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "789 Oak St, Chicago, IL 60601",
-      "price": "$600,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/property3.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "101 Pine St, Houston, TX 77001",
-      "price": "$400,000",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "202 Maple St, Miami, FL 33101",
-      "price": "$850,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "303 Cedar St, Seattle, WA 98101",
-      "price": "$700,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "404 Birch St, Denver, CO 80201",
-      "price": "$550,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/property7.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "hargeysa",
-      "price": "$650,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "hargeysa",
-      "price": "$1,200,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "hargeysa",
-      "price": "$450,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "123 Main St, New York, NY 10001",
-      "price": "$500,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "456 Elm St, Los Angeles, CA 90001",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-        "address": "mogadishu",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-        "address": "hargeysa",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-2.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "789 Oak St, Chicago, IL 60601",
-      "price": "$600,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "101 Pine St, Houston, TX 77001",
-      "price": "$400,000",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "202 Maple St, Miami, FL 33101",
-      "price": "$850,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/property5.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "303 Cedar St, Seattle, WA 98101",
-      "price": "$700,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/property6.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "404 Birch St, Denver, CO 80201",
-      "price": "$550,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/property7.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "505 Walnut St, Boston, MA 02101",
-      "price": "$650,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/property8.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "606 Chestnut St, San Francisco, CA 94101",
-      "price": "$1,200,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/property9.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "707 Spruce St, Austin, TX 73301",
-      "price": "$450,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/property10.jpg",
-      "listingStatus": "For Sale"
-    },
-    {
-      "address": "123 Main St, New York, NY 10001",
-      "price": "$500,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/property1.jpg",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-      "address": "456 Elm St, Los Angeles, CA 90001",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/property2.jpg",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-        "address": "mogadishu",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-        "address": "hargeysa",
-      "price": "$750,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-2.png",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-      "address": "789 Oak St, Chicago, IL 60601",
-      "price": "$600,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/property3.jpg",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-      "address": "101 Pine St, Houston, TX 77001",
-      "price": "$400,000",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-      "address": "202 Maple St, Miami, FL 33101",
-      "price": "$850,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "featured ": "for Buy"
-    },
-    {
-      "address": "303 Cedar St, Seattle, WA 98101",
-      "price": "$700,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "House",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "listingStatuS": "Featured"
-    },
-    {
-      "address": "404 Birch St, Denver, CO 80201",
-      "price": "$550,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Apartment",
-      "imageUrl": "Assets/Images/property7.jpg",
-      "listingStatus": "For Sale",
-      "listingStatuS": "Featured"
-    },
-    {
-      "address": "hargeysa",
-      "price": "$650,000",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "propertyType": "Condo",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "listingStatuS": "Featured"
-    },
-    {
-      "address": "hargeysa",
-      "price": "$1,200,000",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "propertyType": "Villa",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "listingStatuS": "Featured"
-    },
-    {
-      "address": "hargeysa",
-      "price": "$450,000",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "propertyType": "Townhouse",
-      "imageUrl": "Assets/Images/popular-1.png",
-      "listingStatus": "For Sale",
-      "listingStatuS": "Featured"
-      
-    }
-  ]
+  {
+    "address": "Qoryooley, Somalia",
+    "price": "$480,000",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "propertyType": "Apartment",
+    "imageUrl": "Assets/Images/property21.jpg",
+    "listingStatus": "For Sale",
+    "year": 2021,
+    "features": "Featured",
+    "size": "1,200 sqft"
+  },
+  {
+    "address": "Balcad, Somalia",
+    "price": "$620,000",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "propertyType": "House",
+    "imageUrl": "Assets/Images/property22.jpg",
+    "listingStatus": "Sold",
+    "year": 2019,
+    "features": "Featured",
+    "size": "1,800 sqft"
+  },
+  {
+    "address": "Burao, Somalia",
+    "price": "$700,000",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "propertyType": "Villa",
+    "imageUrl": "Assets/Images/property23.jpg",
+    "listingStatus": "For Sale",
+    "year": 2022,
+    "features": "Featured",
+    "size": "2,500 sqft"
+  },
+  {
+    "address": "Taleh, Somalia",
+    "price": "$550,000",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "propertyType": "Townhouse",
+    "imageUrl": "Assets/Images/property24.jpg",
+    "listingStatus": "For Sale",
+    "year": 2020,
+    "features": "Featured",
+    "size": "1,700 sqft"
+  },
+  {
+    "address": "Hobyo, Somalia",
+    "price": "$820,000",
+    "bedrooms": 6,
+    "bathrooms": 5,
+    "propertyType": "Villa",
+    "imageUrl": "Assets/Images/property25.jpg",
+    "listingStatus": "Sold",
+    "year": 2023,
+    "features": "Featured",
+    "size": "3,000 sqft"
+  },
+  {
+    "address": "Jilib, Somalia",
+    "price": "$550,000",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "propertyType": "Apartment",
+    "imageUrl": "Assets/Images/property26.jpg",
+    "listingStatus": "For Sale",
+    "year": 2018,
+    "features": "Featured",
+    "size": "1,100 sqft"
+  },
+  {
+    "address": "Kornayl, Somalia",
+    "price": "$930,000",
+    "bedrooms": 7,
+    "bathrooms": 6,
+    "propertyType": "House",
+    "imageUrl": "Assets/Images/property27.jpg",
+    "listingStatus": "For Sale",
+    "year": 2021,
+    "features": "Featured",
+    "size": "3,200 sqft"
+  },
+  {
+    "address": "Doolow, Somalia",
+    "price": "$1,000,000",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "propertyType": "Condo",
+    "imageUrl": "Assets/Images/property28.jpg",
+    "listingStatus": "Sold",
+    "year": 2020,
+    "features": "Featured",
+    "size": "2,100 sqft"
+  },
+  {
+    "address": "Ceerigaabo, Somalia",
+    "price": "$670,000",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "propertyType": "Villa",
+    "imageUrl": "Assets/Images/property29.jpg",
+    "listingStatus": "For Sale",
+    "year": 2022,
+    "features": "Featured",
+    "size": "2,300 sqft"
+  },
+  {
+    "address": "Badhan, Somalia",
+    "price": "$480,000",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "propertyType": "House",
+    "imageUrl": "Assets/Images/property30.jpg",
+    "listingStatus": "For Sale",
+    "year": 2019,
+    "features": "Featured",
+    "size": "1,300 sqft"
+  }
+]

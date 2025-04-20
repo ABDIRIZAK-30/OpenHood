@@ -62,35 +62,6 @@ navBtn.addEventListener("click", () => {
 
 
 
-// faqs
-
-const faqData = [
-  {
-    question: "How do I schedule a property visit?",
-    answer: "You can schedule a property visit by clicking the 'Book a Tour' button on the property listing page or by contacting us directly via phone or WhatsApp. We'll confirm the date and time based on your availability."
-  },
-  {
-    question: "Are there any hidden fees when buying or renting a property?",
-    answer: "No, there are no hidden fees. All costs, including taxes, agency fees, and maintenance charges (if applicable), are clearly outlined before any agreement is signed."
-  },
-  {
-    question: "Can I get help with financing or a mortgage?",
-    answer: "Yes, we can connect you with trusted financial institutions and mortgage consultants to help you find the best financing option based on your needs and budget."
-  },
-  {
-    question: "Is it possible to list my property for sale or rent on your website?",
-    answer: "Absolutely! You can submit your property through our 'List Your Property' page, or contact our agents directly. We'll help you with pricing, photos, and promotion."
-  },
-  {
-    question: "Do you offer virtual tours or video walkthroughs?",
-    answer: "Yes, many of our listings include 360° virtual tours or video walkthroughs so you can explore properties remotely before scheduling a visit."
-  }
-];
-
-
-const questionDiv=document.querySelector('.questionDiv')
-questionDiv
-
 // Add event listener to the search form
 const searchForm = document.querySelector("#searchForm");
 searchForm.addEventListener("submit", (e) => {
@@ -108,3 +79,107 @@ searchForm.addEventListener("submit", (e) => {
   // Redirect to the property.html page
   window.location.href = "property.html";
 });
+
+
+
+// havor displaying Team info in About page
+
+
+function toggleDetails(event) {
+  const clickedIcon = event.target;
+  const teamBlock = clickedIcon.closest('.team1');
+  const currentDetails = teamBlock.querySelector('.details');
+
+  // First hide all other details and reset all icons
+  const allDetails = document.querySelectorAll('.details');
+  const allIcons = document.querySelectorAll('#absicon');
+
+  allDetails.forEach(detail => detail.classList.add('hidden'));
+  allIcons.forEach(icon => icon.classList.remove('active'));
+
+  // Then show or toggle the current one
+  const isHidden = currentDetails.classList.contains('hidden');
+  if (isHidden) {
+    currentDetails.classList.remove('hidden');
+    clickedIcon.classList.add('active');
+  } else {
+    currentDetails.classList.add('hidden');
+    clickedIcon.classList.remove('active');
+  }
+}
+
+
+
+
+
+
+// faq section\\
+
+const faqs = [
+  {
+    question: "What is the average cost of a property listed?",
+    answer: "The average cost depends on the area, but currently it ranges between $250,000 and $600,000."
+  },
+  {
+    question: "How often is the property data updated?",
+    answer: "Our listings are updated daily to ensure you receive the latest information."
+  },
+  {
+    question: "Can I schedule a tour of the property?",
+    answer: "Yes, you can schedule a tour by contacting the listing agent directly from the property page."
+  },
+  {
+    question: "Do listings show both rent and sale options?",
+    answer: "Most listings show sale prices, but some may also display estimated rental values if available."
+  },
+  {
+    question: "How accurate is the Zestimate price?",
+    answer: "Zestimate provides a good estimate but may not reflect the current market value. We recommend a professional appraisal."
+  },
+  {
+    question: "Is financing assistance available?",
+    answer: "Yes, we can connect you with mortgage providers who offer financing options."
+  },
+  {
+    question: "Are these properties new constructions or resales?",
+    answer: "Our platform lists both new constructions and resale homes. The listing will specify this."
+  },
+  {
+    question: "Can I filter properties by school district or neighborhood?",
+    answer: "Yes, you can use advanced filters to narrow down by district, neighborhood, price, and more."
+  },
+  {
+    question: "What if a property I like gets sold?",
+    answer: "If a property is sold, we’ll notify you if you’ve saved it, and recommend similar listings."
+  },
+  {
+    question: "How can I contact the listing agent?",
+    answer: "You’ll find the agent’s contact info on each listing page, including phone, email, and sometimes a contact form."
+  }
+];
+
+
+const questionDiv=document.querySelector('.questionDiv')
+  faqs.forEach((faq =>{
+    const divQA=document.createElement('div')
+    divQA.classList.add('divQA')
+    divQA.innerHTML=`
+    <h2 class="Q-title">${faq.question}</h2>
+    <p class="Q-answer" style="display:none">${faq.answer}</p>
+    
+    
+    `
+    const contentQ=divQA.querySelector(".Q-title");
+    contentQ.addEventListener('click',()=>{
+      const contentA = divQA.querySelector('.Q-answer');
+      const allAnswers = document.querySelectorAll('.Q-answer');
+      allAnswers.forEach(answer => {
+        if (answer !== contentA) {
+          answer.style.display = "none";
+        }
+      });
+      contentA.style.display = contentA.style.display === "none" ? "block" : "none";
+    });
+
+    questionDiv.appendChild(divQA)
+  }))
