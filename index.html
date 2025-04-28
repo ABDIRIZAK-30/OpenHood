@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" type="image/png" href="Assets/Logo OpenHood/Fav-icon.png">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5d0dd89-dc76-4292-850d-f6673e6e47bc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <link rel="stylesheet" href="Style.css">
     <title>OpenHood</title>
 </head>
@@ -15,15 +15,54 @@
 <body>
 
     <header class="box-container">
-    <nav class="main-nav box-container">
-        <img src="Assets/Logo OpenHood/1.png" alt="logo" id="logo-1">
-        <div class="menuBtn">
+        <nav class="main-nav box-container">
+            <img src="Assets/Logo OpenHood/1.png" alt="logo" id="logo-1">
+            <div class="menuBtn hide-in">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+         
+            </div>
+            <div class="menuLinks" id="none-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Service.html">Service</a></li>
+                    <li><a href="property.html">Property</a></li>
+                    <li><a href="Facilites.html">Facilites</a></li>
+                    <li><a href="Buy.html">Buy </a></li>
+                    <li><a href="Sell.html">Sell</a></li>
+                    <li><a href="Rent.html"> Rent</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="thirdDiv hide-in">
+                <button type="submit" onclick="window.location.href='Contact.html'"><a href="Contact.html"></a>Contact us</button>
+                <button class="themeToggleBtn" id="navBtn">
+                    <span class="material-symbols-outlined" id="lightMode">light_mode</span>
+                    <span class="material-symbols-outlined" id="darkMode" style="display: none;">dark_mode</span>
+                </button>
+            </div>
+    
+    
+    
+        </nav>
+    
+    </header>
+
+
+    <!-- menu displaying only tablet-mobile -->
+
+    <nav class="mobile-nav">
+        <div class="mobileBtn">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-            <!-- <img src="/Assets/Images/burger-menu.png" alt="burger-menu"> -->
+         <img src="/Assets/Images/burger-menu.png" alt="burger-menu"  class="mobileBtn1">
         </div>
-        <div class="menuLinks">
+        <div class="mobile-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -38,18 +77,15 @@
 
         </div>
 
-        <div class="thirdDiv">
-            <button type="submit"><a href="Contact.html"></a>Contact us</button>
-            <button class="themeToggleBtn" id="navBtn">
-                <span class="material-symbols-outlined" id="lightMode">light_mode</span>
-                <span class="material-symbols-outlined" id="darkMode" style="display: none;">dark_mode</span>
+        <div class="thirdDiv mobileDiv">
+            <button type="submit" onclick="window.location.href='Contact.html'"><a href="Contact.html"></a>Contact us</button>
+            <button class="themeToggleBtn" id="NavBtn">
+                <span class="material-symbols-outlined" id="lightmode">light_mode</span>
+                <span class="material-symbols-outlined" id="darkmode" style="display: none;">dark_mode</span>
             </button>
         </div>
-
-
-
     </nav>
-</header>
+
     <!-- hero section -->
 
     <section class="box-container">
@@ -155,7 +191,15 @@
                 <h1>Trusted by Industry Leaders</h1>
             </div>
             <div class="trust-compny-1">
-                <img src="/Assets/company-logo/deepseek_wordmark.svg" alt="lock-icon">
+                <img src="Assets/company-logo/booking.webp" alt="booking">
+                <img src="Assets/company-logo/columbia.webp" alt="columbia">
+                <img src="Assets/company-logo/microsoft.webp" alt="microsoft">
+                <img src="Assets/company-logo/Payoneer.webp" alt="Payoneer">
+                <img src="Assets/company-logo/Paypal.webp" alt="payapal">
+                <img src="Assets/company-logo/visa.webp" alt="visa">
+                <img src="Assets/company-logo/trivago.webp" alt="trivago">
+                <img src="Assets/company-logo/razorpay.webp" alt="razorpay">
+                <img src="Assets/company-logo/deepseek_wordmark.svg" alt="lock-icon">
                 <img src="/Assets/company-logo/tailwindcss-wordmark-dark.svg" alt="lock-icon">
                 <img src="/Assets/company-logo/claude-ai-wordmark-icon_dark.svg" alt="lock-icon">
                 <img src="/Assets/company-logo/stripe.svg" alt="lock-icon">
@@ -1074,7 +1118,7 @@
                     <span class="material-symbols-outlined">local_shipping</span>
                     <h2>Telagram</h2>
                 </div>
-
+                
 
             </div>
         </div>

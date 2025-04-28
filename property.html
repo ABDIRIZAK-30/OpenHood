@@ -13,15 +13,60 @@
 </head>
 
 <body>
-    <nav class="main-nav box-container">
-        <img src="Assets/Logo OpenHood/1.png" alt="logo" id="logo-1">
-        <div class="menuBtn">
-            <!-- <span class="bar"></span>
+
+
+   
+
+    
+    <header class="box-container">
+        <nav class="main-nav box-container">
+            <img src="Assets/Logo OpenHood/1.png" alt="logo" id="logo-1">
+            <div class="menuBtn hide-in">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+         
+            </div>
+            <div class="menuLinks" id="none-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Service.html">Service</a></li>
+                    <li><a href="property.html">Property</a></li>
+                    <li><a href="Facilites.html">Facilites</a></li>
+                    <li><a href="Buy.html">Buy </a></li>
+                    <li><a href="Sell.html">Sell</a></li>
+                    <li><a href="Rent.html"> Rent</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="thirdDiv hide-in">
+                <button type="submit" onclick="window.location.href='Contact.html'"><a href="Contact.html"></a>Contact us</button>
+                <button class="themeToggleBtn" id="navBtn">
+                    <span class="material-symbols-outlined" id="lightMode">light_mode</span>
+                    <span class="material-symbols-outlined" id="darkMode" style="display: none;">dark_mode</span>
+                </button>
+            </div>
+    
+    
+    
+        </nav>
+    
+    </header>
+
+
+    <!-- menu displaying only tablet-mobile -->
+
+    <nav class="mobile-nav">
+        <div class="mobileBtn">
             <span class="bar"></span>
-            <span class="bar"></span> -->
-            <img src="/Assets/Images/burger-menu.png" alt="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+         <img src="/Assets/Images/burger-menu.png" alt="burger-menu"  class="mobileBtn1">
         </div>
-        <div class="menuLinks">
+        <div class="mobile-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -36,18 +81,17 @@
 
         </div>
 
-        <div class="thirdDiv">
-            <button type="submit"><a href="Contact.html"></a>Contact us</button>
-            <button class="themeToggleBtn" id="navBtn">
+        <div class="thirdDiv mobileDiv">
+            <button type="submit" onclick="window.location.href='Contact.html'"><a href="Contact.html"></a>Contact us</button>
+            <button class="themeToggleBtn" id="mobilenavBtn">
                 <span class="material-symbols-outlined" id="lightMode">light_mode</span>
                 <span class="material-symbols-outlined" id="darkMode" style="display: none;">dark_mode</span>
             </button>
         </div>
-
-
-
     </nav>
-<section class="box-container">
+
+    
+<section class="box-container global">
 
 
     <div class="main-properties-container">
@@ -58,6 +102,131 @@
       </div>
 
     </section>
+
+<!-- Modal for Property Details -->
+<div id="property-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-grid">
+        <!-- Left Section: Property Details -->
+        <div class="modal-left">
+          <h1 id="modal-property-title">Property Title</h1>
+          <p id="modal-property-description">
+            This is a detailed description of the property. It provides an overview of the features, amenities, and other important details about the property.
+          </p>
+          <ul>
+            <li><strong>Address:</strong> <span id="modal-property-address"></span></li>
+            <li><strong>Price:</strong> <span id="modal-property-price"></span></li>
+            <li><strong>Bedrooms:</strong> <span id="modal-property-bedrooms"></span></li>
+            <li><strong>Bathrooms:</strong> <span id="modal-property-bathrooms"></span></li>
+            <li><strong>Size:</strong> <span id="modal-property-size"></span></li>
+            <li><strong>Year Built:</strong> <span id="modal-property-year-built"></span></li>
+            <li><strong>Status:</strong> <span id="modal-property-status"></span></li>
+       
+          </ul>
+       
+          <img id="modal-property-image" src="" alt="Property Image">
+
+          <button onclick="window.history.back()" style="width: 100%; margin-top: 4rem; padding: 0.7rem 1rem;">Go Back</button>
+     
+        </div>
+  
+        <!-- Right Section: Property Image or Form -->
+        <div class="modal-right">
+            <img src="Assets/Images/about-6.jpg" alt="Property Image">
+          <form class="property-form">
+            <h2>Contact Agent</h2>
+            <label for="name" id="label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email" id="emaila">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="message" id="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message"  rows="2" cols="50" style="resize: none;"></textarea>
+            <button type="submit" onclick="submited()">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="submit" id="popup">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <h1 id="title-img">Submission Successful!</h1>
+    <p><strong>Name:</strong> <span id="saved-name"></span></p>
+    <p><strong>Email:</strong> <span id="saved-email"></span></p>
+    <img src="Assets/Images/submit-img.jpg" alt="Submitted" id="submited-img">
+  </div>
+  
+
+<!-- footer section -->
+
+<section class="box-container">
+
+    <div class="footer-section">
+        <div class="footer-1">
+            <img src="Assets/Logo OpenHood/2.png" alt="white-logo" id="footerLogo">
+            <h1>Empowering Digital Success</h1>
+            <p>Boost productivity, enhance security, and simplify your work—all in one place.</p>
+            <div class="subuscribe">
+                <label for="subuscribe">Subscribe to get the latest insights and offers.</label>
+                <div class="newsletter">
+                    <input type="text" name="newsletter" id="newsletter" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-2">
+            <span>Quick Links</span>
+            <h1>Home</h1>
+            <h1>About Us</h1>
+            <h1>Services</h1>
+            <h1>Blog</h1>
+            <h1>Contact</h1>
+
+
+        </div>
+
+        <div class="footer-2">
+
+            <span>Support & Resources</span>
+            <h1>Help Center</h1>
+            <h1>FAQs</h1>
+            <h1>Privacy Policy</h1>
+            <h1>Terms of Service</h1>
+            <h1>Careers</h1>
+
+        </div>
+
+        <div class="footer-2">
+            <span>Support & Resources</span>
+            <h1>📧 Email: support@OpenHood.com</h1>
+            <h1>📞 Phone: +1 234 567 890</h1>
+            <h1>📍 Address: 123 Tech Street, City, Country</h1>
+
+            <div class="socail">
+                <img src="Assets/Images/facebook.png" alt="facebook">
+                <img src="Assets/Images/twitter.png" alt="twitter">
+                <img src="Assets/Images/github.png" alt="github">
+                <img src="Assets/Images/linkedin.png" alt="linkedin">
+                <img src="Assets/Images/white-whatspp.png" alt="whatsapp">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="box-container one-line">
+    <h1>OpenHood</h1>
+</section>
+
+<div class="last-footer box-container">
+    <h1>© 2025 OpenHood. All rights reserved.</h1>
+    <h1>Powered By: ABDIRIZAK MOALIM.</h1>
+</div>
 
 
 

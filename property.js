@@ -80,24 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <button id="Sold">${property.listingStatus}</button>
         </div>
         <h1>${property.address}</h1>
-        <div class="popGrid">
-          <div class="p-1">
-            <span class="material-symbols-outlined">Home</span>
-            <h1>${property.propertyType}</h1>
-          </div>
-          <div class="p-1 p-s">
-            <span class="material-symbols-outlined">6_ft_apart</span>
-            <h1>${property.size}</h1>
-          </div>
-          <div class="p-1">
-            <span class="material-symbols-outlined">room_preferences</span>
-            <h1>${property.bedrooms} Rooms</h1>
-          </div>
-          <div class="p-1 p-s">
-            <span class="material-symbols-outlined">slide_library</span>
-            <h1>${property.year}</h1>
-          </div>
-        </div>
         <div class="p-2">
           <h1>${property.price}</h1>
           <button class="view-details-btn">View Details</button>
@@ -107,11 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add event listener to the "View Details" button
       const viewDetailsButton = pop1.querySelector(".view-details-btn");
       viewDetailsButton.addEventListener("click", () => {
-        // Save the property data in localStorage
-        localStorage.setItem("selectedProperty", JSON.stringify(property));
-
-        // Redirect to the details page
-        window.location.href = "details.html";
+        openModal(property);
       });
 
       popFlex.appendChild(pop1);
@@ -121,5 +99,103 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(mainPopular);
   }
 
+  function openModal(property) {
+    // Populate the left section with property details
+    document.getElementById("modal-property-title").textContent =
+      property.address;
+    document.getElementById("modal-property-description").textContent =
+      property.description || "This is a detailed description of the property.";
+    document.getElementById("modal-property-address").textContent =
+      property.address;
+    document.getElementById("modal-property-price").textContent =
+      property.price;
+    document.getElementById("modal-property-bedrooms").textContent =
+      property.bedrooms || "N/A";
+    document.getElementById("modal-property-bathrooms").textContent =
+      property.bathrooms || "N/A";
+    document.getElementById("modal-property-size").textContent =
+      property.size || "N/A";
+    document.getElementById("modal-property-year-built").textContent =
+      property.year || "N/A";
+    document.getElementById("modal-property-status").textContent =
+      property.listingStatus;
+
+    // Populate the right section with the property image
+    document.getElementById("modal-property-image").src = property.imageUrl;
+
+    // Show the modal
+    const modal = document.getElementById("property-modal");
+    modal.style.display = "block";
+
+    // Close the modal when the close button is clicked
+    const closeBtn = modal.querySelector(".close-btn");
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close the modal when clicking outside the modal content
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+
   filterAndDisplayProperties();
 });
+
+const form = document.querySelector("form");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+const modal = document.getElementById("property-modal");
+
+// New: DOM elements to inject form data into popup
+const savedName = document.getElementById("saved-name");
+const savedEmail = document.getElementById("saved-email");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // prevent actual submission
+
+  // Get form input values
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  // Save to localStorage
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userEmail", email);
+
+  // Inject into popup
+  savedName.textContent = name;
+  savedEmail.textContent = email;
+
+  // Show popup, hide modal
+  popup.style.display = "block";
+  modal.style.display = "none";
+
+  // Optional: update popup title/image
+  document.getElementById("title-img").textContent =
+    "Thank you for contacting us!";
+  document.getElementById("submited-img").src = "Assets/Images/submit-img.jpg";
+
+  //  clear form
+  form.reset();
+});
+
+closeBtn.addEventListener("click", function () {
+  popup.style.display = "none";
+});
+
+//  show last saved user info on refresh
+window.addEventListener("DOMContentLoaded", () => {
+  const name = localStorage.getItem("userName");
+  const email = localStorage.getItem("userEmail");
+
+  if (name && email) {
+    savedName.textContent = name;
+    savedEmail.textContent = email;
+  }
+});
+
+
+
+

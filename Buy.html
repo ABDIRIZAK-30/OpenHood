@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="Assets/Logo OpenHood/Fav-icon.png">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5d0dd89-dc76-4292-850d-f6673e6e47bc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <link rel="stylesheet" href="Style.css">
+    <title>OpenHood</title>
+</head>
+
+<body>
+
+    
+    <header class="box-container">
+        <nav class="main-nav box-container">
+            <img src="Assets/Logo OpenHood/1.png" alt="logo" id="logo-1">
+            <div class="menuBtn hide-in">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+         
+            </div>
+            <div class="menuLinks" id="none-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Service.html">Service</a></li>
+                    <li><a href="property.html">Property</a></li>
+                    <li><a href="Facilites.html">Facilites</a></li>
+                    <li><a href="Buy.html">Buy </a></li>
+                    <li><a href="Sell.html">Sell</a></li>
+                    <li><a href="Rent.html"> Rent</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="thirdDiv hide-in">
+                <button type="submit" onclick="window.location.href='Contact.html'"><a href="Contact.html"></a>Contact us</button>
+                <button class="themeToggleBtn" id="navBtn">
+                    <span class="material-symbols-outlined" id="lightMode">light_mode</span>
+                    <span class="material-symbols-outlined" id="darkMode" style="display: none;">dark_mode</span>
+                </button>
+            </div>
+    
+    
+    
+        </nav>
+    
+    </header>
+
+
+    <!-- menu displaying only tablet-mobile -->
+
+    <nav class="mobile-nav">
+        <div class="mobileBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         <img src="/Assets/Images/burger-menu.png" alt="burger-menu"  class="mobileBtn1">
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="property.html">Property</a></li>
+                <li><a href="Facilites.html">Facilites</a></li>
+                <li><a href="Buy.html">Buy </a></li>
+                <li><a href="Sell.html">Sell</a></li>
+                <li><a href="Rent.html"> Rent</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+
+        </div>
+
+        <div class="thirdDiv mobileDiv">
+            <button type="submit" onclick="window.location.href='Contact.html'"><a href="Contact.html"></a>Contact us</button>
+            <button class="themeToggleBtn" id="mobilenavBtn">
+                <span class="material-symbols-outlined" id="lightMode">light_mode</span>
+                <span class="material-symbols-outlined" id="darkMode" style="display: none;">dark_mode</span>
+            </button>
+        </div>
+    </nav>
+
+
+<!-- <section>
+    <div class="mainAbout main-service">
+        <div class="divabt">
+            <h1>Our Services</h1>
+            <h2> Comprehensive rental solutions designed to make<br> your property journey seamless and successful</h2>
+        </div>
+    </div>
+</section> -->
+
+<!-- Buy Page Hero Section -->
+<section class="buy-hero">
+    <div class="container">
+      <h1>Find Your Dream Property</h1>
+      <p>Browse through premium listings tailored to your lifestyle and budget. Start your journey to homeownership today.</p>
+      <!-- <a href="#featured-properties" class="hero-btn">Explore Listings</a> -->
+      <button id="exBtn">Explore Listings</button>
+    </div>
+  </section>
+
+
+  
+  
+  <section class="buying-steps box-container">
+    <div class="container">
+      <h2>How to Buy a Property on OpenHood</h2>
+      <p class="section-desc">Buying a home has never been easier. Just follow these simple steps.</p>
+      
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Search & Filter</h3>
+          <p>Use powerful filters to narrow down listings and find your perfect match.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>View Property</h3>
+          <p>Check photos, features, and compare locations and pricing.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Schedule a Visit</h3>
+          <p>Set up a visit to see the home in person and ask questions.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">4</span>
+          <h3>Make it Yours</h3>
+          <p>Negotiate, sign papers, and secure your new home with our team’s help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+   <!-- Popular Listings -->
+
+<section class="box-container">
+
+    <div class="mainPopular">
+
+        <h1>Explore Listings</h1>
+        <p>Handpicked homes based on your preferences.</p>
+
+        <div class="popFlex">
+            <div class="pop-1">
+                <img src="Assets/Images/asset 32.jpeg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Banadir, Mogadishu</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Single Family</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,500 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2023</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$300,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/asset 31.jpeg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Maroodi Jeex, Hargeisa</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Condo</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,000 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2021</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$200,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/asset 33.jpeg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Bari, Bosaso</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Townhouse</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,800 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2022</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$350,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/asset 34.jpeg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+
+                <h1>Lower Juba, Kismayo</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Apartment</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>900 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2020</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$180,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Popular Listings -->
+
+<section class="box-container">
+
+    <div class="mainPopular">
+
+        <div class="popFlex">
+            <div class="pop-1">
+                <img src="Assets/Images/property1.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Mudug, Galkayo</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Single Family</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>2,000 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2019</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$400,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property2.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Bay, Baidoa</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Condo</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,200 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2018</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$250,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property3.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Nugal, Garowe</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Townhouse</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,600 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2024</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$320,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property4.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+
+                <h1>Sahil, Berbera</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Apartment</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>800 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2017</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$150,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Popular Listings -->
+
+<section class="box-container">
+
+    <div class="mainPopular">
+
+        <div class="popFlex">
+            <div class="pop-1">
+                <img src="Assets/Images/property5.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Hiiraan, Beledweyne</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Single Family</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>2,200 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2016</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$450,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property6.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Middle Shabelle, Jowhar</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Condo</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,300 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2023</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$270,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property7.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Karkaar, Qardho</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Townhouse</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,700 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2021</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$340,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property8.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+
+                <h1>Awdal, Borama</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Apartment</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>950 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2019</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$190,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Popular Listings -->
+
+<section class="box-container">
+
+    <div class="mainPopular">
+
+        <div class="popFlex">
+            <div class="pop-1">
+                <img src="Assets/Images/property9.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Lower Shabelle, Marka</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Single Family</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>2,500 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2018</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$480,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property10.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Sool, Las Anod</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Condo</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,100 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2022</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$230,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property11.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Togdheer, Burao</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Townhouse</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,900 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2020</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$370,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property12.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+
+                <h1>Nugal, Eyl</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Apartment</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>850 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2016</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$170,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Popular Listings -->
+
+<section class="box-container">
+
+    <div class="mainPopular">
+
+        <div class="popFlex">
+            <div class="pop-1">
+                <img src="Assets/Images/property13.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Galguduud, Hobyo</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Single Family</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>2,800 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2015</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$500,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property14.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Lower Shabelle, Afgoye</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Condo</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,400 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2024</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$290,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property15.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Lower Juba, Dhobley</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Townhouse</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>2,100 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2017</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$410,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property16.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+
+                <h1>Middle Juba, Bu’aale</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Apartment</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,050 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2021</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$210,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Popular Listings -->
+
+<section class="box-container">
+
+    <div class="mainPopular">
+
+        <div class="popFlex">
+            <div class="pop-1">
+                <img src="Assets/Images/property17.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Galguduud, Hobyo</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Single Family</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>3,000 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2016</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$490,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property18.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Lower Shabelle, Afgoye</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Condo</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,250 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2023</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$260,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property19.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+                <h1>Lower Juba, Dhobley</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Townhouse</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,850 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2019</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$360,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="pop-1">
+                <img src="Assets/Images/property20.jpg" alt="popular-1">
+                <div class="abspop">
+                    <button id="Featured">Featured</button>
+                    <button id="Buy">Buy</button>
+                </div>
+
+                <h1>Middle Juba, Bu’aale</h1>
+                <div class="popGrid">
+                    <div class="p-1 ">
+                        <span class="material-symbols-outlined">Home</span>
+                        <h1>Apartment</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> 6_ft_apart</span>
+                        <h1>1,150 sqft</h1>
+                    </div>
+
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">room_preferences</span>
+                        <h1>4 Rooms</h1>
+                    </div>
+                    <div class="p-1 p-s">
+                        <span class="material-symbols-outlined"> slide_library </span>
+                        <h1>2022</h1>
+                    </div>
+
+                </div>
+                <div class="p-2">
+                    <h1>$240,000</h1>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+        <!-- why choose us  -->
+
+        <section class="box-container">
+
+            <div class="main-chse">
+                <h1>What Makes OpenHood Stand Out?</h1>
+                <p>We’re more than just listings — we’re a trusted partner in your home journey.</p>
+                <div class="chseCard">
+                    <div class="ch-1">
+                        <span class="material-symbols-outlined">
+                            select_check_box
+                        </span>
+                        <h1>Local Expertise</h1>
+                        <p>We know the streets, not just the stats.
+                            From Hargeisa to Kismayo, we focus on Somali neighborhoods — giving you access to properties
+                            where culture, community, and comfort meet.</p>
+    
+                    </div>
+                    <div class="ch-1">
+                        <span class="material-symbols-outlined">
+                            headphones
+                        </span>
+                        <h1>24/7 Customer Support</h1>
+                        <p>Real help, any time you need it.
+                            Our friendly team is here day and night to answer your questions and guide you through every
+                            step of your home journey.</p>
+    
+                    </div>
+    
+    
+    
+                    <div class="ch-1">
+                        <span class="material-symbols-outlined">
+                            verified
+                        </span>
+                        <h1>Verified Listings</h1>
+                        <p>No scams. No guesswork. Just real homes.
+                            Every property on OpenHood is verified by our team, so you can browse with peace of mind and
+                            full confidence.</p>
+    
+    
+                    </div>
+                    <div class="ch-1">
+                        <span class="material-symbols-outlined">
+                            select_check_box
+                        </span>
+                        <h1>Smart Search Tools</h1>
+                        <p>Find your perfect home — faster.
+                            Filter by location, price, size, and more. Save your favorites, explore nearby options, and
+                            compare listings in one place. </p>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+
+
+            <!-- cat section -->
+
+    <section class="box-container">
+        <div class="main-cat">
+
+        <div class="left-cat">
+
+       
+        <div class="cat-left">
+
+            <div class="cat-1">
+                <img src="Assets/Images/Cdategory1.png" alt="cat-1">
+                <h1>Air Fryer Icon</h1>
+            </div>
+            <div class="cat-1">
+                <img src="Assets/Images/Cdtegory2.png" alt="cat-1">
+                <h1>Energy Efficiency</h1>
+            </div>
+            <div class="cat-1">
+                <img src="Assets/Images/Cdategory3.png" alt="cat-1">
+                <h1>Swimming Pool</h1>
+            </div>
+            <div class="cat-1">
+                <img src="Assets/Images/Cdategory4.png" alt="cat-1">
+                <h1>Living Room Comfort</h1>
+            </div>
+            <div class="cat-1">
+                <img src="Assets/Images/Cdategory5.png" alt="cat-1">
+                <h1>Bathroom Comfortable</h1>
+            </div>
+            <div class="cat-1">
+                <img src="Assets/Images/Cdategory6.png" alt="cat-1">
+                <h1>Gardening Tools</h1>
+            </div>
+        </div>
+
+        <form id="searchForm">
+            <div class="srchDiv">
+                <span class="material-symbols-outlined" style="color: blue;">home_pin</span>
+                <input type="text" id="searchInput" placeholder="Enter location,Property type,or keyword">
+                <button>
+                    <span class="material-symbols-outlined">search</span>
+                    Search now
+                </button>
+            </div>
+        </form>
+    </div>
+        <div class="righthero catright">
+            <img src="Assets/Images/asset 40.jpeg" alt="home-image" id="right-img">
+
+          
+
+            <div class="rightbd2">
+                <div class="bdrigth1">
+                    <span class="material-symbols-outlined">handshake</span>
+                    <h2>Facebook</h2>
+                </div>
+                <div class="bdrigth1">
+                    <span class="material-symbols-outlined">home</span>
+                    <h2>Twitter</h2>
+
+                </div>
+                <div class="bdrigth1">
+                    <span class="material-symbols-outlined">attach_money </span>
+                    <h2>Instgram</h2>
+
+                </div>
+                <div class="bdrigth1">
+                    <span class="material-symbols-outlined">local_shipping</span>
+                    <h2>Telagram</h2>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+    <!-- testmonilas section -->
+
+
+<section class=" box-container testimonials">
+
+    <h1 class="testimonials-title">What Our Clients Say</h1>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <h1>Amina Warsame, First-Time Homebuyer</h1>
+        <h2>★★★★★</h2>
+        <p>Hargeisa, Somaliland</p>
+        <p>La-tashigii iyo adeegii aan ka helay shirkaddan guryaha aad buu u sarreeyey. Waxay si buuxda u fahmeen waxa aan rabay, waxayna ii heleen guri qurux badan oo ku habboon miisaaniyadda.</p>
+        <img src="Assets/Images/Safiyo Mohamed.jpg" alt="safiyo">
+       
+      </div>
+      <div class="testimonial">
+        <h1>MC-Hamuuda., Milkiilaha iibiyay guri</h1>
+        <h2>★★★★★</h2>
+        <p>Togdheer, Somaliland</p>
+        <p>Waxaan doonayay in aan si degdeg ah u iibiyo guri, waxaana layaabay sida xirfadaysan ee ay u shaqeeyaan. Wax walba ayey iga qabteen laga bilaabo xayeysiinta ilaa heshiiskii ugu dambeeyay.Waa adeeg la isku halleyn karo!</p>
+        <img src="Assets/Images/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+       
+      </div>
+      <div class="testimonial">
+        <h1>Taniim Ali., Maalgashato</h1>
+        <h2>★★★★★</h2>
+        <p>Togdheer, Somaliland</p>
+        <p>Aniga oo ah maal-galiye, waxaan u baahanahay talo xirfadaysan. Shirkaddan waxay i siiyeen fursado qiimo leh, waxayna iga caawiyeen dhammaan geeddi-socodka.</p>
+        <img src="Assets/Images/Tasniim Abdi.jpg" alt="Tasniim">
+       
+      </div>
+      <div class="testimonial">
+        <h1>Cumar K., Qof kireystay guri</h1>
+        <h2>★★★★★</h2>
+        <p>Togdheer, Somaliland</p>
+        <p>Shaqo darteed ayaan u guurayay, waxaana waayay meel aan ku bilaabo. Laakiin shirkaddan waxay ii heleen guri aad u fiican, waxayna iga caawiyeen arrimo badan oo deegaanka la xiriira.Runtii waayo-aragnimo raaxo leh!</p>
+        <img src="Assets/Images/team1.jpg" alt="team1">
+       
+      </div>
+      <div class="testimonial">
+        <h1>Fadumo S., Qoys iibsaday guri</h1>
+        <h2>★★★★★</h2>
+        <p>Togdheer, Somaliland</p>
+        <p>Waa dad aad u daacad ah, adeeggooduna waa heer sare. Qoyskeyga baahiyihiisa way dhegaysteen, waxayna noo heleen guri aan hadda ku faraxsanahay.Aad baan ugu mahadcelinayaa dadaalkooda</p>
+        <img src="Assets/Images/Haboon Abdi.jpg" alt="haboon">
+       
+      </div>
+      <div class="testimonial">
+        <h1>ABDIRIZAK MOALIM , Owner BPD</h1>
+        <h2>★★★★★</h2>
+        <p>Togdheer, Somaliland</p>
+        <p>Waxaan la dhacay daahfurnaanta iyo kalsoonida. Waxaa jiray wax walba oo si furan la iigu sheegay, mana jirin wax qarsoodi ah.Haddii aad rabto adeeg dhab ah, waa kuwan!</p>
+        <img src="Assets/Images/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+       
+      </div>
+   
+ 
+    </div>
+
+  </section>
+
+
+
+
+
+  
+    <!-- qr-code  -->
+    <section class="box-container">
+        <div class="main-qrcode">
+            <div class="leftQr">
+                <h1>Scan the QR code to get the OpenHood Rental Manager App</h1>
+            
+                    <h2>Simply scan the QR code on the right with your phone’s camera, then click the prompt to open the app download page.</h2>
+            </div>
+            <div class="rightQr">
+                <img src="Assets/Images/qr-code.png" alt="qr-code">
+            </div>
+        </div>
+     </section>
+
+     
+     
+      <!-- contact us section -->
+
+      <section class="box-container">
+        <div class="main-contact">
+            <div class="leftCnt">
+                <h1>Our Contact Us</h1>
+                   <h5>Easy to contact us</h5> 
+                    <p>always ready to help by providijng the best services for you. We beleive a good blace to live can make your life better</p>
+
+                    <div class="contDiv">
+                        <div class="cnt-1">
+                        <span class="material-symbols-outlined">call</span>
+                        
+                         <div class="cnt-1div">
+                            <h1>Call</h1>
+                            <p>+1 245-435-7689</p>
+                            <button>Call Now</button>
+                         </div>   
+                        </div>
+                        <div class="cnt-1">
+                            <span class="material-symbols-outlined">
+                                quick_phrases
+                                </span>
+                        
+                         <div class="cnt-1div">
+                            <h1>Chat</h1>
+                            <p>+1 245-435-7689</p>
+                            <button>Chat Now</button>
+                         </div>   
+                        </div>
+                        <div class="cnt-1">
+                            <span class="material-symbols-outlined">
+                                video_call
+                                </span>
+                        
+                         <div class="cnt-1div">
+                            <h1>Video Call</h1>
+                            <p>+1 245-435-7689</p>
+                            <button>Call Now</button>
+                         </div>   
+                        </div>
+                        <div class="cnt-1">
+                            <span class="material-symbols-outlined">
+                                sms
+                                </span>
+                        
+                         <div class="cnt-1div">
+                            <h1>Message</h1>
+                            <p>+1 245-435-7689</p>
+                            <button>Text Now</button>
+                         </div>   
+                        </div>
+                    </div>
+            </div>
+            <div class="rightCnt">
+                <!-- <img src="Assets/Images/contact-1.jpg" alt="contact" id="only-mobile"> -->
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+
+ <!-- footer section -->
+
+ <section class="box-container">
+
+    <div class="footer-section">
+        <div class="footer-1">
+            <img src="Assets/Logo OpenHood/2.png" alt="white-logo" id="footerLogo">
+            <h1>Empowering Digital Success</h1>
+            <p>Boost productivity, enhance security, and simplify your work—all in one place.</p>
+            <div class="subuscribe">
+                <label for="subuscribe">Subscribe to get the latest insights and offers.</label>
+                <div class="newsletter">
+                    <input type="text" name="newsletter" id="newsletter" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-2">
+            <span>Quick Links</span>
+            <h1>Home</h1>
+            <h1>About Us</h1>
+            <h1>Services</h1>
+            <h1>Blog</h1>
+            <h1>Contact</h1>
+
+
+        </div>
+
+        <div class="footer-2">
+
+            <span>Support & Resources</span>
+            <h1>Help Center</h1>
+            <h1>FAQs</h1>
+            <h1>Privacy Policy</h1>
+            <h1>Terms of Service</h1>
+            <h1>Careers</h1>
+
+        </div>
+
+        <div class="footer-2">
+            <span>Support & Resources</span>
+            <h1>📧 Email: support@OpenHood.com</h1>
+            <h1>📞 Phone: +1 234 567 890</h1>
+            <h1>📍 Address: 123 Tech Street, City, Country</h1>
+
+            <div class="socail">
+                <img src="Assets/Images/facebook.png" alt="facebook">
+                <img src="Assets/Images/twitter.png" alt="twitter">
+                <img src="Assets/Images/github.png" alt="github">
+                <img src="Assets/Images/linkedin.png" alt="linkedin">
+                <img src="Assets/Images/white-whatspp.png" alt="whatsapp">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="box-container one-line">
+    <h1>OpenHood</h1>
+</section>
+
+<div class="last-footer box-container">
+    <h1>© 2025 OpenHood. All rights reserved.</h1>
+    <h1>Powered By: ABDIRIZAK MOALIM.</h1>
+</div>
+
+
+
+
+<script src="main.js"></script>
+<script src="faq.js"></script>
+</body>
+
+</html>
+
