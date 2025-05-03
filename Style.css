@@ -80,6 +80,28 @@
     background-color: var(--clr-primary-light);
   }
   
+
+  /* Scroll to Top Button Styles */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 100;
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: opacity 0.4s, visibility 0.4s;
+  text-align: left;
+  
+}
+
+
   .box-container {
     max-width: 1370px;
     margin: 0 auto;

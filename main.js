@@ -31,14 +31,18 @@ updateIcons = () => {
   lightIcon.style.display = isDark ? "none" : "inline-block";
   darkIcon.style.color = "white";
   lightIcon.style.color = "black";
-  darkicon.style.display = isDark ? "inline-block" : "none";
-  lighticon.style.display = isDark ? "none" : "inline-block";
-  darkicon.style.color = "white";
-  lighticon.style.color = "white";
-
-  logo.src = isDark ? "Assets/Logo OpenHood/3.png" : "Assets/Logo OpenHood/1.png";
+  // darkicon.style.display = isDark ? "inline-block" : "none";
+  // lighticon.style.display = isDark ? "none" : "inline-block";
+  // darkicon.style.color = "white";
+  // lighticon.style.color = "white";
+  // if(logo.src = isDark){
+  //   "/Assets/Logo OpenHood/3.png"
+  // }else{
+  //    "/Assets/Logo OpenHood/1.png"
+  // }
+  logo.src = isDark ? "/Assets/Logo OpenHood/3.png"  : "/Assets/Logo OpenHood/1.png" ;
   rightImg.src=isDark? "Assets/Images/3.png" : "Assets/Images/2.png"
-  footerlogo.src=isDark?  "Assets/Logo OpenHood/3.png" : "Assets/Logo OpenHood/1.png";
+  footerlogo.src=isDark?  "/Assets/Logo OpenHood/3.png" : "/Assets/Logo OpenHood/1.png";
   h1Top.innerHTML = isDark 
     ? `Start Fresh in a <span style="color: blue;">Place</span> That Feels Like Home ` 
     : `Find Your Next <span style="color: blue;">Home</span> in the Perfect Neighborhood`;
@@ -61,6 +65,12 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   updateIcons();
 });
+// NavBtn.addEventListener("click", () => {
+//   const isDarknow = document.body.classList.toggle("darkmode");
+//   localStorage.setItem("Theme", isDarknow ? "darkmode" : "lightmode");
+//   updateIcons();
+// });
+
 
 // Toggle theme on click
 navBtn.addEventListener("click", () => {
@@ -69,11 +79,7 @@ navBtn.addEventListener("click", () => {
   updateIcons();
 });
 
-NavBtn.addEventListener("click", () => {
-  const isDarkNow = document.body.classList.toggle("darkmode");
-  localStorage.setItem("Theme", isDarkNow ? "darkmode" : "lightmode");
-  updateIcons();
-});
+
 
 
 
@@ -94,6 +100,7 @@ searchForm.addEventListener("submit", (e) => {
   // Redirect to the property.html page
   window.location.href = "property.html";
 });
+
 
 
 
