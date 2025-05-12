@@ -418,6 +418,7 @@ body.darkmode .heroicon h4{
 }
 
 .srchDiv button{
+    font-size:0.8rem;
     display: flex;
     align-items: center;
     gap: 1rem;
