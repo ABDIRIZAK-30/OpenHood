@@ -4534,6 +4534,74 @@ padding: 0rem;
 }
 
 
+.coming-soon {
+  height: 120vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.coming-soon h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  
+}
+
+.coming-soon p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+
+
+#eml{
+  padding: 15px 20px;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  outline: hidden;
+  border: none;
+  width: 350px;
+}
+
+.newsletter button {
+  font-size: 1rem;
+  border: none;
+  background-color: #00a43c;
+  color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+}
+
+.newsletter button:hover {
+  background-color: #a31616;
+}
+
 
 
 

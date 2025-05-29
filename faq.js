@@ -74,7 +74,7 @@ const faqs = [
   
 
 
-  const launchDate = new Date("May 30, 2025 12:00:00").getTime();
+  const launchDate = new Date("Jun 30, 2025 12:00:00").getTime();
 
   const countdown = setInterval(() => {
     const now = new Date().getTime();
