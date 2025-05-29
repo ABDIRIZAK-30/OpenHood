@@ -904,7 +904,7 @@ color: #22c55e;
 }
 
 .sale-2 h1{
-  font-size: 3.9rem;
+  font-size: 3.5rem;
 }
 
 .saleFlex{
@@ -1083,7 +1083,7 @@ color: #22c55e;
   flex-direction: column;
   gap:0.6rem;
   border: 1px solid hsla(254, 100%, 56%, 0.8);
-  border-radius: 0.1rem;
+  border-radius: 0.7rem;
   background-color: hsla(254, 100%, 56%, 0.1);
 }
 
@@ -1390,6 +1390,7 @@ padding-top: 10rem;
   background-color: rgba(0, 209, 188, 0.926);
   border: 2px solid #000000;
   color: #000000;
+  font-size: 0.6rem;
   
 
 }
@@ -2694,7 +2695,7 @@ margin-bottom: 2rem;
 }
 
 #h1-3{
-  margin-left: -14rem;
+  margin-left: -10rem;
 }
 
 .flex-1{
