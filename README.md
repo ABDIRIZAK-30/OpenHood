@@ -59,9 +59,9 @@
 
 ## 📸 Screenshots
 
-| Home Page | Contact Page |
+| Home Page |
 |:---------:|:------------:|
-| ![Home Screenshot](/Assets/Full-screenshot.jpg) | ![Contact Screenshot](/Assets/Contact-Screenshot.jpg) |
+| ![Home Screenshot](/Assets/Full-screenshot.jpg) |
 
 ---
 
