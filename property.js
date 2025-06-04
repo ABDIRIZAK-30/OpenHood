@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchQuery = localStorage.getItem("searchQuery");
 
     // Check if the current page is not the home page
-    if (window.location.pathname !== "index.html" && !searchQuery) {
+    if (window.location.pathname !== "/index.html" && !searchQuery) {
       alert("No search query provided. Redirecting to the home page.");
       document.body.innerHTML = "<p>Redirecting to the home page...</p>"; // Show a message before redirecting
       setTimeout(() => {
