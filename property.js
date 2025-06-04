@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function filterAndDisplayProperties() {
-    const searchQuery = localStorage.getItem("searchQuery");
+    const searchQuery = localStorage.getItem("searchQuery") ;
 
     // Check if the current page is not the home page
     if (window.location.pathname !== "/index.html" && !searchQuery) {
