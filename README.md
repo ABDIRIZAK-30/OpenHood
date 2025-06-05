@@ -40,7 +40,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/OpenHood.git
+   git clone https://github.com/ABDIRIZAK-30/OpenHood.git
    ```
 
 2. Navigate to the project directory:
